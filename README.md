@@ -9,4 +9,4 @@
 1. 组件中非prop的特性（attribute）会被直接添加到组件中的根元素上  
 接上，使用inheritAttrs: false可以关闭该特性
 1. \.sync修饰符用于实现组件内部更新父组件props值的emit的缩写（作用于对象字面量时无效）
-1. \<solt\>跟react中的child类似，不过可以配合name进行指定分发，另外还允许指定默认值`<slot>Submit</slot>`
+1. \<slot\>跟react中的child类似，不过可以配合name进行指定分发，另外还允许指定默认值`<slot>Submit</slot>`
