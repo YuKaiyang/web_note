@@ -17,3 +17,9 @@ function fib(n: number): number {
   return inside(n)
 }
 ```
+- 试试
+的都是多所
+```python
+print(a)
+```
+有问题
