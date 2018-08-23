@@ -5,6 +5,7 @@
 1. interface定义对象属性时有前缀只读`readonly`,后缀可选`?`和任意属性`[propName:类型]:类型`
 1. 类型别名与字符串字面量类型都是使用 type 进行定义。
 1. 一个斐波那契数列的尾递归实现
+
 ```typescript
 function fib(n: number): number {
   function inside(n: number, a = 1, b = 1): any {
