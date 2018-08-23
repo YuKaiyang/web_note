@@ -19,7 +19,7 @@ function fib(n: number): number {
 ```
 - 试试
 的都是多所
-```python
+  ```python
 print(a)
 ```
 有问题
