@@ -16,3 +16,4 @@ function fib(n: number): number {
   return inside(n)
 }
 ```
+1. 类型别名与字符串字面量类型都是使用 type 进行定义。
