@@ -6,7 +6,7 @@
 1. 类型别名与字符串字面量类型都是使用 type 进行定义。
 1. 一个斐波那契数列的尾递归实现
 
-```typescript
+```ts
 function fib(n: number): number {
   function inside(n: number, a = 1, b = 1): any {
     if (n <= 2) {
