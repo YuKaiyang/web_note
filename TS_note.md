@@ -3,7 +3,7 @@
 1. any的变量可以进行任意操作，比如访问不存在的属性和方法（可以理解为不做检查了）
 1. interface可以对对象的形状进行描述（类似schema）
 1. interface定义对象属性时有前缀只读`readonly`,后缀可选`?`和任意属性`[propName:类型]:类型`
-1. 一个斐波那契数列的为递归实现  
+1. 一个斐波那契数列的尾递归实现  
 ```javascript
 function fib(n: number): number {
   function inside(n: number, a = 1, b = 1): any {
