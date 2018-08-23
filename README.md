@@ -1,4 +1,36 @@
-# web_note
+## web_note
+## js_note
+
+```
+"use strict"
+// 普通函数（如果用new操作符调用时就会返回一个新的对象实例，这时就是构造函数）
+function Person(name, age) {
+  this.name = name
+  this.age = age
+}
+/*
+* 构造函数的prototype指向对象原型, 此时是
+* Person {
+*   say(...)
+* }
+*/
+Person.prototype.say = function () {
+  console.log(`Hello my name is ${this.name}`)
+}
+
+const p1 = new Person('p1', 12)
+const p2 = new Person('p2', 30)
+const p3 = Object.create(p1)
+// const p3 = p1
+// 此时p3是空对象，它的全部属性都通过原型链指向p1
+console.log(p3)
+console.log(p3.age)
+p3.name = 'p3'
+console.log(p3)
+p1.say()
+p3.say()
+```
+
 ## vue_note
 1. 计算属性有基于依赖的缓存，方法则每次都会重新执行
 1. v-if为false时组件根本不会被渲染，v-show只是操作是否可见（需要频繁切换的情况更适合用show）
