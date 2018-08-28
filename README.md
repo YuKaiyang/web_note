@@ -1,4 +1,5 @@
 ## web_note
+webpack4已经默认包含json-loader，再次添加rules反倒会失效报错
 ## js_note
 
 ```
