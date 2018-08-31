@@ -1,5 +1,5 @@
 ## web_note
-webpack4已经默认包含json-loader，再次添加rules反倒会失效报错
+webpack4已经默认包含json-loader，再次添加rules反倒会失效报错  
 IE11 has an issue with only having min-height. This cause the flex-grow property dosn't work.
 ## js_note
 
