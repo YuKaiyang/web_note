@@ -23,7 +23,7 @@ Person.prototype.say = function () {
 const p1 = new Person('p1', 12)
 const p2 = new Person('p2', 30)
 const p3 = Object.create(p1)
-// const p3 = p1
+
 // 此时p3是空对象，它的全部属性都通过原型链指向p1
 console.log(p3) //Person {}
 console.log(p3.age) //12
