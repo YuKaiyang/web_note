@@ -3,7 +3,7 @@ webpack4已经默认包含json-loader，再次添加rules反倒会失效报错
 IE11 has an issue with only having min-height. This cause the flex-grow property dosn't work.
 ## js_note
 
-```
+```js
 "use strict"
 // 普通函数（如果用new操作符调用时就会返回一个新的对象实例，这时就是构造函数）
 function Person(name, age) {
