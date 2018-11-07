@@ -25,12 +25,27 @@ const p2 = new Person('p2', 30)
 const p3 = Object.create(p1)
 // const p3 = p1
 // 此时p3是空对象，它的全部属性都通过原型链指向p1
-console.log(p3)
-console.log(p3.age)
+console.log(p3) //Person {}
+console.log(p3.age) //12
 p3.name = 'p3'
-console.log(p3)
-p1.say()
-p3.say()
+console.log(p3) //Person {name: "p3"}
+p1.say() //Hello my name is p1
+p3.say() //Hello my name is p3
+
+//理解call和apply
+let arr = [1, 2, 3]
+
+Array.prototype.forEach.call(arr, v => {
+  console.log(v) //1,2,3
+})
+
+Array.prototype.forEach.apply(arr, [v => {
+  console.log(v) //1,2,3
+}])
+
+arr.forEach(function (v) {
+  console.log(v) //1,2,3
+})
 ```
 
 ## vue_note
