@@ -11,7 +11,7 @@ function Person(name, age) {
   this.age = age
 }
 /*
- * 构造函数的prototype指向对象原型, 此时是
+ * 构造函数的prototype指向原型对象, 此时是
  * Person {say: ƒ, constructor: ƒ}
  */
 Person.prototype.say = function () {
@@ -23,8 +23,8 @@ const p2 = new Person('p2', 30)
 const p3 = Object.create(p1)
 
 // 此时p3是空对象，它的全部属性都通过原型链指向p1
-console.log(p3.__proto__ === p1) // true
 console.log(p3) // Person {}
+console.log(p3.__proto__ === p1) // true
 console.log(p3.age) // 12
 p3.name = 'p3'
 console.log(p3) // Person {name: "p3"}
