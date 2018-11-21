@@ -1,6 +1,7 @@
 ## web_note
-webpack4已经默认包含json-loader，再次添加rules反倒会失效报错  
-IE11 has an issue with only having min-height. This cause the flex-grow property dosn't work.
+1. webpack4已经默认包含json-loader，再次添加rules反倒会失效报错  
+1. IE11 has an issue with only having min-height. This cause the flex-grow property dosn't work.
+1. path.resolve如果右边的参数是绝对路径会用该路径做起始(忽略左边的参数);path.join则失踪在左边的基础上添加新路径
 ## js_note
 
 ```js
