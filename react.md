@@ -3,6 +3,7 @@
 1. { Suspense, lazy }用来实现组件懒加载(可结合react-router使用,暂不支持服务端渲染)
 1. React.forwardRef实现向前(向上)引用
 1. mixins被Higher-Order Components替代,HOC是纯函数,无副作用(感觉还是像组合,或者说是装饰器;参数化容器组件的定义)
+1. 高阶组件的常见危险是放到render方法中,解决方法是Instead, apply HOCs outside the component definition so that the resulting component is created only once. Then, its identity will be consistent across renders. This is usually what you want, anyway.
 1. 事件传递
   ```jsx
   <button onClick={(e) => this.handleClick(e)}>Click me</button>
