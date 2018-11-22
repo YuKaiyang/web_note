@@ -2,6 +2,7 @@
 1. At Facebook, we use React in thousands of components, and we haven’t found any use cases where we would recommend creating component inheritance hierarchies.
 1. { Suspense, lazy }用来实现组件懒加载(可结合react-router使用,暂不支持服务端渲染)
 1. React.forwardRef实现向前(向上)引用
+1. mixins被Higher-Order Components替代,
 1. 事件传递
   ```jsx
   <button onClick={(e) => this.handleClick(e)}>Click me</button>
